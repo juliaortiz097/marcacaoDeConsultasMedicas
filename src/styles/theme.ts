@@ -1,14 +1,14 @@
 export default {
     colors: {
-      primary: '#ff0944',
-      secondary: '#FF2A5BFF',
+      primary: '#8B0020FF',
+      secondary: '#8B0020FF',
       background: '#FFEAC3C3',
       text: '#333333',
-      error: '#FF647C',
-      success: '#FF3845FF',
-      white: '#FFFFFF',
-      border: '#CF0030FF',
-      warning: '#7D001DFF'
+      error: '#8B0020FF',
+      success: '#8B0020FF',
+      white: '#FFEAC3C3',
+      border: '#8B0020FF',
+      warning: '#8B0020FF'
       
     },
     typography: {
