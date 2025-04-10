@@ -7,7 +7,9 @@ import { HeaderContainer, HeaderTitle } from '../components/Header';
 import theme from '../styles/theme';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Appointment, RootStackParamList, Doctor } from '../types/appointments';
+import { Appointment } from '../types/appointments';
+import { Doctor } from '../types/doctors';
+import { RootStackParamList } from '../types/navigation';
 import { useFocusEffect } from '@react-navigation/native';
 
 type HomeScreenProps = {
@@ -17,21 +19,21 @@ type HomeScreenProps = {
 const doctors: Doctor[] = [
   {
     id: '1',
-    name: 'Dra. Julia Ortiz',
-    specialty: 'Endocrinologista',
-    image: 'https://media-gru2-1.cdn.whatsapp.net/v/t61.24694-24/473397809_609321005166970_2645999163299644760_n.jpg?ccb=11-4&oh=01_Q5AaISt3RwcBgFj5TnrKtZ_M69huZJ8y2M9RmNZhKO79E_zd&oe=67F24D31&_nc_sid=5e03e0&_nc_cat=104',
+    name: 'Dr. João Silva',
+    specialty: 'Cardiologista',
+    image: 'https://mighty.tools/mockmind-api/content/human/91.jpg',
   },
   {
     id: '2',
-    name: 'Dra. Julia Palomari',
-    specialty: 'Ginecologista e Obstetra',
-    image: 'https://media-gru2-1.cdn.whatsapp.net/v/t61.24694-24/394128618_353863357081936_4877780367150686629_n.jpg?ccb=11-4&oh=01_Q5AaIRv8cLHFAGewMXJ46cEy1K1Vdz_wiHW_dhDxzVk_EnDl&oe=67F2417C&_nc_sid=5e03e0&_nc_cat=103',
+    name: 'Dra. Maria Santos',
+    specialty: 'Dermatologista',
+    image: 'https://mighty.tools/mockmind-api/content/human/97.jpg',
   },
   {
     id: '3',
-    name: 'Dra. Leticia Batista',
-    specialty: 'Dermatologista',
-    image: 'https://media-gru2-1.cdn.whatsapp.net/v/t61.24694-24/473412712_1164607305050069_8055155643570000762_n.jpg?ccb=11-4&oh=01_Q5AaITKKU07nG0IdOnS0nQdLCFvrDrvu2ntlUEiYD1qtcllB&oe=67F25DDB&_nc_sid=5e03e0&_nc_cat=100',
+    name: 'Dr. Pedro Oliveira',
+    specialty: 'Oftalmologista',
+    image: 'https://mighty.tools/mockmind-api/content/human/79.jpg',
   },
 ];
 
